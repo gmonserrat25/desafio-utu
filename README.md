@@ -24,21 +24,50 @@ assets/js/main.js
 assets/img/            fotos de carrera + logos de sponsors
 ```
 
+## Identidad
+
+Paleta y tipografías tomadas del sitio oficial del UTU, no inventadas:
+
+| Token | Valor | Uso |
+|-------|-------|-----|
+| `--amarillo` | `#F7F839` | acento flúo: ticker, CTAs, hovers, números, checks |
+| `--verde` | `#3C6151` | verde serrano: sección de la leyenda, acentos sobre fondo claro |
+| `--naranja` | `#F29100` | disponible para detalles |
+| `--menta` | `#84E4BD` | disponible |
+| `--ink` | `#1D1D1B` | negro cálido de marca |
+| `--bone` | `#F4F3EE` | fondo claro |
+
+- **Display:** Oswald (la condensada del sitio oficial)
+- **Cuerpo:** Poppins
+
+El amarillo se usa siempre sobre fondo oscuro — sobre el hueso no tiene contraste suficiente.
+Cuando hace falta un acento sobre fondo claro va el verde, que sí pasa contraste.
+
+Los logotipos (`assets/img/logo1-negro.svg` y `logo-blanco.svg`) son los oficiales. El motivo de
+chevrones `>>>` de la banda separadora también sale de la gráfica del evento y está inline como
+data-URI en `.chevrons`, así que se le cambia el color editando el `stroke` en el CSS.
+
+
 ## Secciones
 
 | # | Sección | Equivalente en el modelo |
 |---|---------|--------------------------|
-| 1 | Ticker + nav | ticker + nav |
+| 1 | Ticker amarillo + nav con logo oficial | ticker + nav |
 | 2 | Hero "Sé parte de la leyenda" + cuenta regresiva | hero |
-| 3 | Destacado 70K | Next Run |
-| 4 | Las 7 distancias (lista con hover) | Calendar |
-| 5 | La leyenda del Uturunco | Our Mission |
-| 6 | Aftermovie | — |
-| 7 | Cronograma de 3 días | — |
-| 8 | La sierra + compromiso ambiental | — |
-| 9 | Sponsors | Shop |
-| 10 | Inscripción + newsletter | Ready? / Signup |
-| 11 | Footer | footer |
+| 3 | Los números de la carrera | — |
+| 4 | Destacado 70K | Next Run |
+| 5 | Las 7 distancias (lista con hover) | Calendar |
+| 6 | Material obligatorio | — |
+| 7 | La leyenda del Uturunco (verde serrano) | Our Mission |
+| 8 | Aftermovie | — |
+| 9 | Ediciones anteriores: resultados y fotos | — |
+| 10 | Cronograma de 3 días | — |
+| 11 | La sierra + compromiso ambiental | — |
+| 12 | Cómo llegar + alojamiento y gastronomía | — |
+| 13 | Dudas frecuentes | — |
+| 14 | Sponsors | Shop |
+| 15 | Inscripción + newsletter | Ready? / Signup |
+| 16 | Footer | footer |
 
 ## Cambiar la fecha de la próxima edición
 
@@ -95,7 +124,14 @@ definitivos se publican junto al reglamento.
 
 ## Pendientes
 
-- Precios por distancia: no están publicados; hay que pedirlos y agregar una tabla.
+- **Precios por distancia**: las inscripciones 2026 ya cerraron y los valores no quedaron
+  publicados en ningún lado, así que no hay tabla de precios. Hay que pedírselos a la
+  organización. La sección de dudas dice que se publican al abrir la inscripción.
+- **Material obligatorio**: el bloque de "todas las distancias" y el de las largas está armado
+  con lo que confirmé (dorsal, chip, remera, hidratación propia; frontal, manta térmica y
+  botiquín para las largas) más los ítems habituales del reglamento de un ultra. Hay que
+  contrastarlo contra el reglamento oficial cuando salga — la propia sección lo aclara.
+- **Tiempos de corte** por distancia: faltan, van junto al reglamento.
 - El formulario de newsletter valida el mail pero no tiene backend — hay que engancharlo a
   Mailchimp, Brevo o similar.
 - Reglamento y listado de material obligatorio: falta la página/PDF.

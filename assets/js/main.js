@@ -143,7 +143,11 @@ const MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto'
 
 /* ── reveal al hacer scroll ────────────────────── */
 (() => {
-  const targets = $$('.section__head, .feature__card, .drow, .day, .sierra__body, .spon__block, .cta__title, .cta__copy, .legend__quote, .legend__foot, .film__frame');
+  const targets = $$([
+    '.section__head', '.feature__card', '.drow', '.day', '.sierra__body', '.spon__block',
+    '.cta__title', '.cta__copy', '.legend__quote', '.legend__foot', '.film__frame',
+    '.stat', '.kitcard', '.past__grid li', '.via', '.stay', '.faq details'
+  ].join(', '));
   if (!targets.length || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
 
   targets.forEach((el, i) => {
