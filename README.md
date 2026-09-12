@@ -18,55 +18,29 @@ python3 -m http.server 8733 --bind 0.0.0.0
 - Desde el celular en la misma red: `http://<IP-de-la-Mac>:8733`
   (la IP sale con `ipconfig getifaddr en0`)
 
-## Publicar como Artifact
+## Dónde está publicado
 
-`build-artifact.py` genera `artifact.html`: el mismo contenido de `index.html` sin el
-envoltorio `<html>/<head>/<body>`, que el host del Artifact aporta por su cuenta. Se
-regenera después de tocar `index.html`:
+**En vivo:** https://gmonserrat25.github.io/desafio-utu/ — público, sin login, servido
+por GitHub Pages desde la rama `main` de este repo. Para actualizarlo alcanza con
+`git push`: Pages reconstruye solo en un par de minutos.
 
-```bash
-python3 build-artifact.py
-```
+El `.nojekyll` de la raíz está para que Pages sirva los archivos tal cual en vez de
+pasarlos por Jekyll.
 
-Después se publica `artifact.html` pasando `assets/` como archivos adjuntos. El artifact
-nace privado: se abre con la sesión de Claude de su dueño, y para que lo vea otra persona
-hay que compartirlo desde el menú de la página.
+### Otras dos formas que quedaron armadas
 
-El embed de YouTube del aftermovie puede no cargar dentro del Artifact por su política de
-contenido; por eso el bloque tiene además un enlace "Abrir en YouTube" que siempre funciona.
+- **Higgsfield** (`desafio-utu.higgsfield.app`): el sitio está desplegado ahí, con el
+  contenido portado a un proyecto React + TanStack Start. La URL responde
+  `401 unauthenticated` porque un sitio desplegado y no publicado pide sesión de
+  Higgsfield; para abrirlo a cualquiera hay que publicarlo, y eso lo lista en el feed
+  de la comunidad. Queda listo por si algún día conviene.
+- **Artifact de Claude**: `build-artifact.py` genera `artifact.html`, el mismo contenido
+  sin el envoltorio `<html>/<head>/<body>` que el host del Artifact aporta. Se publica
+  pasando `assets/` como archivos adjuntos. Sirve para compartir con alguien que tenga
+  sesión de Claude; no es una URL abierta.
 
-## Estructura
-
-```
-index.html
-assets/css/style.css
-assets/js/main.js
-assets/img/            fotos de carrera + logos de sponsors
-```
-
-## Identidad
-
-Paleta y tipografías tomadas del sitio oficial del UTU, no inventadas:
-
-| Token | Valor | Uso |
-|-------|-------|-----|
-| `--amarillo` | `#F7F839` | acento flúo: ticker, CTAs, hovers, números, checks |
-| `--verde` | `#3C6151` | verde serrano: sección de la leyenda, acentos sobre fondo claro |
-| `--naranja` | `#F29100` | disponible para detalles |
-| `--menta` | `#84E4BD` | disponible |
-| `--ink` | `#1D1D1B` | negro cálido de marca |
-| `--bone` | `#F4F3EE` | fondo claro |
-
-- **Display:** Oswald (la condensada del sitio oficial)
-- **Cuerpo:** Poppins
-
-El amarillo se usa siempre sobre fondo oscuro — sobre el hueso no tiene contraste suficiente.
-Cuando hace falta un acento sobre fondo claro va el verde, que sí pasa contraste.
-
-Los logotipos (`assets/img/logo1-negro.svg` y `logo-blanco.svg`) son los oficiales. El motivo de
-chevrones `>>>` de la banda separadora también sale de la gráfica del evento y está inline como
-data-URI en `.chevrons`, así que se le cambia el color editando el `stroke` en el CSS.
-
+El embed de YouTube del aftermovie puede no cargar según dónde se sirva la página; por
+eso el bloque tiene además un enlace "Abrir en YouTube" que siempre funciona.
 
 ## Secciones
 
