@@ -11,9 +11,29 @@ Es HTML/CSS/JS plano, sin build. Cualquier servidor estático sirve:
 
 ```bash
 cd ~/Proyectos/desafio-utu
-python3 -m http.server 8733
-# http://127.0.0.1:8733
+python3 -m http.server 8733 --bind 0.0.0.0
 ```
+
+- Desde la misma máquina: http://127.0.0.1:8733
+- Desde el celular en la misma red: `http://<IP-de-la-Mac>:8733`
+  (la IP sale con `ipconfig getifaddr en0`)
+
+## Publicar como Artifact
+
+`build-artifact.py` genera `artifact.html`: el mismo contenido de `index.html` sin el
+envoltorio `<html>/<head>/<body>`, que el host del Artifact aporta por su cuenta. Se
+regenera después de tocar `index.html`:
+
+```bash
+python3 build-artifact.py
+```
+
+Después se publica `artifact.html` pasando `assets/` como archivos adjuntos. El artifact
+nace privado: se abre con la sesión de Claude de su dueño, y para que lo vea otra persona
+hay que compartirlo desde el menú de la página.
+
+El embed de YouTube del aftermovie puede no cargar dentro del Artifact por su política de
+contenido; por eso el bloque tiene además un enlace "Abrir en YouTube" que siempre funciona.
 
 ## Estructura
 

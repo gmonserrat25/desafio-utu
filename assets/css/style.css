@@ -649,3 +649,12 @@ ul,ol,dl,dd{margin:0;padding:0;list-style:none}
   margin:0;padding:0 3rem clamp(1.25rem,3vh,2rem) 0;
   max-width:72ch;color:var(--smoke);font-size:.96rem;
 }
+
+/* salida al video por si el embed no esta disponible */
+.film__yt{
+  position:absolute;left:50%;bottom:clamp(1rem,3vw,2rem);transform:translateX(-50%);
+  font-family:var(--f-mono);font-weight:500;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--bone);border-bottom:1px solid rgba(244,243,238,.45);padding-bottom:.25rem;
+  transition:color .3s,border-color .3s;
+}
+.film__yt:hover{color:var(--amarillo);border-bottom-color:var(--amarillo)}
