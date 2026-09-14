@@ -4,42 +4,40 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Desafío UTU® — Ultra Trail · Capilla del Monte</title>
-<meta name="description" content="Desafío UTU Ultra Trail. Siete distancias por el Cerro Uritorco, el Overo y Las Gemelas. Capilla del Monte, Córdoba, Argentina.">
-<meta property="og:title" content="Desafío UTU® — Sé parte de la leyenda">
+<meta name="description" content="Una montaña, siete maneras de subirla. Ultra trail en Capilla del Monte, Córdoba: del KV de 1.000 m D+ a las 70K.">
+<meta property="og:title" content="Desafío UTU® — Una montaña. Siete maneras de subirla.">
 <meta property="og:description" content="Ultra trail en las sierras de Córdoba. KV, 10K, 20K, 28K, 35K, 55K y 70K.">
 <meta property="og:image" content="assets/img/hero.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<!-- ═══ TICKER ═══ -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker__track">
-    <span>Desafío UTU® <i>·</i> Ultra Trail <i>·</i> Capilla del Monte <i>·</i> Córdoba <i>·</i> Argentina <i>·</i> Sé parte de la leyenda <i>·</i></span>
-    <span>Desafío UTU® <i>·</i> Ultra Trail <i>·</i> Capilla del Monte <i>·</i> Córdoba <i>·</i> Argentina <i>·</i> Sé parte de la leyenda <i>·</i></span>
-  </div>
+<!-- ═══ TOP LINE ═══ -->
+<div class="topline">
+  <span>Capilla del Monte <i>·</i> Córdoba <i>·</i> Argentina</span>
+  <span class="topline__r">Próxima edición <b>28.08</b></span>
 </div>
 
 <!-- ═══ NAV ═══ -->
 <header class="nav" id="nav">
   <a class="nav__logo" href="#top" aria-label="Desafío UTU, inicio">
     <img class="nav__logoimg" src="assets/img/logo1-negro.svg" alt="Desafío UTU" width="364" height="206">
-    <span class="nav__word">Ultra Trail</span>
+    <span class="nav__word">Ultra Trail<sup>®</sup></span>
   </a>
   <nav class="nav__links" id="navLinks">
     <a href="#distancias">Distancias</a>
+    <a href="#mochila">Mochila</a>
     <a href="#cronograma">Cronograma</a>
-    <a href="#material">Material</a>
-    <a href="#llegar">Cómo llegar</a>
-    <a href="#faq">Dudas</a>
-    <a class="nav__cta nav__cta--mob" href="#inscripcion">Inscribirme</a>
+    <a href="#llegar">Llegar</a>
+    <a href="#dudas">Dudas</a>
+    <a class="nav__cta nav__cta--mob" href="#sumate">Anotarme</a>
   </nav>
-  <a class="nav__cta" href="#inscripcion">
-    <span>Inscribirme</span><span aria-hidden="true">Inscribirme</span>
+  <a class="nav__cta" href="#sumate">
+    <span>Anotarme</span><span aria-hidden="true">Anotarme</span>
   </a>
   <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
 </header>
@@ -49,386 +47,302 @@
 <!-- ═══ HERO ═══ -->
 <section class="hero">
   <div class="hero__media">
-    <img src="assets/img/hero.jpg" alt="Corredores del Desafío UTU al amanecer en las sierras de Capilla del Monte" fetchpriority="high">
+    <img src="assets/img/hero.jpg" alt="Corredores subiendo el filo del Cerro Uritorco al amanecer" fetchpriority="high">
+    <p class="hero__caption"><b>Cumbre del Uritorco</b><span>1.940 m — el techo de las Sierras Chicas</span></p>
   </div>
-  <div class="hero__inner">
-    <p class="eyebrow eyebrow--light">Edición <span id="edicionYear">2027</span> <i>·</i> Capilla del Monte, Córdoba</p>
+  <div class="hero__text">
     <h1 class="hero__title">
-      <span class="line"><span>Sé parte</span></span>
-      <span class="line"><span>de la leyenda.</span></span>
+      <span class="line"><span>Una montaña.</span></span>
+      <span class="line"><span>Siete maneras</span></span>
+      <span class="line"><span>de subirla.</span></span>
     </h1>
-    <p class="hero__lede">Siete distancias por plena montaña: Cerro Uritorco, Cerro Overo y Las Gemelas. Del KV de 1.000&nbsp;m&nbsp;D+ a las 70&nbsp;K de ultra. Un circuito técnico que te va a sacar la versión más fuerte que tenés adentro.</p>
+    <p class="hero__lede">El cerro no cambia de forma según quién lo suba. Lo único que elegís es cuánto querés que te cueste: trece kilómetros de sierra, o setenta que arrancan de madrugada y terminan al sol. La cumbre es la misma para todos.</p>
     <div class="hero__actions">
-      <a class="btn btn--fill" href="#inscripcion"><span>Inscribirme</span><span aria-hidden="true">Inscribirme</span></a>
-      <a class="btn btn--ghost" href="#distancias"><span>Ver distancias</span><span aria-hidden="true">Ver distancias</span></a>
-    </div>
-  </div>
-
-  <div class="hero__bar">
-    <div class="hero__meta">
-      <div><span class="k">Fecha</span><strong id="fechaTexto">28, 29 y 30 de agosto</strong></div>
-      <div><span class="k">Sede</span><strong>Eco Camping Calabalumba</strong></div>
-      <div><span class="k">Distancias</span><strong>7 · KV a 70K</strong></div>
-      <div><span class="k">Puntúa</span><strong>ITRA · UTMB Index</strong></div>
-    </div>
-    <div class="countdown" id="countdown" aria-live="polite">
-      <div class="cd"><b data-cd="d">--</b><span>días</span></div>
-      <div class="cd"><b data-cd="h">--</b><span>hs</span></div>
-      <div class="cd"><b data-cd="m">--</b><span>min</span></div>
-      <div class="cd"><b data-cd="s">--</b><span>seg</span></div>
+      <a class="btn btn--fill" href="#distancias"><span>Elegir distancia</span><span aria-hidden="true">Elegir distancia</span></a>
+      <a class="btn btn--line" href="#sumate"><span>Anotarme</span><span aria-hidden="true">Anotarme</span></a>
     </div>
   </div>
 </section>
 
-
-<!-- ═══ NÚMEROS ═══ -->
-<section class="stats">
-  <div class="stat"><b>7</b><span>distancias, del KV a las 70K</span></div>
-  <div class="stat"><b>1.940<i>m</i></b><span>el techo: cumbre del Uritorco</span></div>
-  <div class="stat"><b>3.300<i>m</i></b><span>de desnivel positivo en la 70K</span></div>
-  <div class="stat"><b>1.500<i>+</i></b><span>corredores en la edición anterior</span></div>
-</section>
-
-<!-- ═══ DESTACADO: LA DISTANCIA REINA ═══ -->
-<section class="feature" id="reina">
-  <div class="feature__label"><span class="eyebrow">La distancia reina</span></div>
-  <article class="feature__card">
-    <div class="feature__photo">
-      <img src="assets/img/55k.jpg" alt="Corredor de ultra distancia en el circuito del Desafío UTU" loading="lazy">
-    </div>
-    <div class="feature__body">
-      <h2 class="feature__num">70<sub>K</sub></h2>
-      <p class="feature__copy">La prueba mayor del Desafío UTU. Largada nocturna, amanecer en la sierra y 3.300 metros de desnivel positivo acumulado entre el Uritorco, el Overo y Las Gemelas.</p>
-      <dl class="specs">
-        <div><dt>Distancia real</dt><dd>70,2 km</dd></div>
-        <div><dt>Desnivel positivo</dt><dd>3.300 m</dd></div>
-        <div><dt>Altura máxima</dt><dd>1.940 msnm</dd></div>
-        <div><dt>Largada</dt><dd>Domingo · 02:30 h</dd></div>
+<!-- ═══ PRÓXIMA EDICIÓN ═══ -->
+<section class="next">
+  <p class="eyebrow">Próxima edición</p>
+  <div class="next__row">
+    <p class="next__date"><span>28</span><i>.</i><span>08</span><i>.</i></p>
+    <div class="next__where">
+      <h2>Capilla del Monte</h2>
+      <dl class="pairs">
+        <div><dt>Largada</dt><dd>Eco Camping Calabalumba</dd></div>
+        <div><dt>Pruebas</dt><dd>7, de 5 a 70 km</dd></div>
+        <div><dt>Duración</dt><dd>Viernes a domingo</dd></div>
       </dl>
-      <a class="btn btn--fill" href="#inscripcion"><span>Quiero esta</span><span aria-hidden="true">Quiero esta</span></a>
     </div>
-  </article>
+    <a class="btn btn--fill" href="#distancias"><span>Ver el circuito</span><span aria-hidden="true">Ver el circuito</span></a>
+  </div>
 </section>
 
 <!-- ═══ DISTANCIAS ═══ -->
 <section class="section distancias" id="distancias">
   <div class="section__head">
     <h2 class="display">Distancias</h2>
-    <p class="section__note">Elegí tu desafío. Todas las pruebas se corren sobre terreno natural de montaña — máximo 20&nbsp;% de asfalto, según estándar ITRA.</p>
+    <p class="section__note">Todas se corren sobre terreno natural de montaña — como mucho un quinto de asfalto, según el estándar ITRA. Cruzan el Uritorco, el Cerro Overo y Las Gemelas.</p>
   </div>
 
   <ul class="dlist" id="dlist">
-    <li class="drow" data-img="assets/img/kv.jpg">
-      <span class="drow__i">01</span>
-      <h3 class="drow__name">KV<em>Kilómetro Vertical</em></h3>
-      <span class="drow__d"><i>Distancia</i>5 km</span>
-      <span class="drow__d"><i>Desnivel +</i>1.000 m</span>
-      <span class="drow__d"><i>Altura máx.</i>1.940 m</span>
-      <a class="drow__cta" href="#inscripcion">Inscribirme<i aria-hidden="true">→</i></a>
-    </li>
     <li class="drow" data-img="assets/img/10k.jpg">
-      <span class="drow__i">02</span>
-      <h3 class="drow__name">10K<em>Iniciación</em></h3>
-      <span class="drow__d"><i>Distancia</i>13,3 km</span>
-      <span class="drow__d"><i>Desnivel +</i>400 m</span>
-      <span class="drow__d"><i>Altura máx.</i>1.253 m</span>
-      <a class="drow__cta" href="#inscripcion">Inscribirme<i aria-hidden="true">→</i></a>
+      <h3 class="drow__name">10K</h3>
+      <span class="drow__sub">Tu primera vez en la sierra</span>
+      <dl class="pairs pairs--row">
+        <div><dt>Distancia real</dt><dd>13,3 km</dd></div>
+        <div><dt>Desnivel</dt><dd>400 m</dd></div>
+        <div><dt>Techo</dt><dd>1.253 m</dd></div>
+      </dl>
+      <a class="drow__cta" href="#sumate">Anotarme<i aria-hidden="true">→</i></a>
     </li>
     <li class="drow" data-img="assets/img/20k.jpg">
-      <span class="drow__i">03</span>
-      <h3 class="drow__name">20K<em>Intermedia</em></h3>
-      <span class="drow__d"><i>Distancia</i>20,3 km</span>
-      <span class="drow__d"><i>Desnivel +</i>800 m</span>
-      <span class="drow__d"><i>Altura máx.</i>1.644 m</span>
-      <a class="drow__cta" href="#inscripcion">Inscribirme<i aria-hidden="true">→</i></a>
+      <h3 class="drow__name">20K</h3>
+      <span class="drow__sub">Ya sabés lo que es subir</span>
+      <dl class="pairs pairs--row">
+        <div><dt>Distancia real</dt><dd>20,3 km</dd></div>
+        <div><dt>Desnivel</dt><dd>800 m</dd></div>
+        <div><dt>Techo</dt><dd>1.644 m</dd></div>
+      </dl>
+      <a class="drow__cta" href="#sumate">Anotarme<i aria-hidden="true">→</i></a>
     </li>
     <li class="drow" data-img="assets/img/28k.jpg">
-      <span class="drow__i">04</span>
-      <h3 class="drow__name">28K<em>Cumbre Uritorco</em></h3>
-      <span class="drow__d"><i>Distancia</i>26,8 km</span>
-      <span class="drow__d"><i>Desnivel +</i>1.420 m</span>
-      <span class="drow__d"><i>Altura máx.</i>1.940 m</span>
-      <a class="drow__cta" href="#inscripcion">Inscribirme<i aria-hidden="true">→</i></a>
+      <h3 class="drow__name">28K</h3>
+      <span class="drow__sub">La primera que pisa la cumbre</span>
+      <dl class="pairs pairs--row">
+        <div><dt>Distancia real</dt><dd>26,8 km</dd></div>
+        <div><dt>Desnivel</dt><dd>1.420 m</dd></div>
+        <div><dt>Techo</dt><dd>1.940 m</dd></div>
+      </dl>
+      <a class="drow__cta" href="#sumate">Anotarme<i aria-hidden="true">→</i></a>
     </li>
     <li class="drow" data-img="assets/img/35k.jpg">
-      <span class="drow__i">05</span>
-      <h3 class="drow__name">35K<em>Ultra corta</em></h3>
-      <span class="drow__d"><i>Distancia</i>36 km</span>
-      <span class="drow__d"><i>Desnivel +</i>1.980 m</span>
-      <span class="drow__d"><i>Altura máx.</i>1.940 m</span>
-      <a class="drow__cta" href="#inscripcion">Inscribirme<i aria-hidden="true">→</i></a>
+      <h3 class="drow__name">35K</h3>
+      <span class="drow__sub">Donde empieza el ultra</span>
+      <dl class="pairs pairs--row">
+        <div><dt>Distancia real</dt><dd>36 km</dd></div>
+        <div><dt>Desnivel</dt><dd>1.980 m</dd></div>
+        <div><dt>Techo</dt><dd>1.940 m</dd></div>
+      </dl>
+      <a class="drow__cta" href="#sumate">Anotarme<i aria-hidden="true">→</i></a>
     </li>
     <li class="drow" data-img="assets/img/55k.jpg">
-      <span class="drow__i">06</span>
-      <h3 class="drow__name">55K<em>Ultra</em></h3>
-      <span class="drow__d"><i>Distancia</i>54 km</span>
-      <span class="drow__d"><i>Desnivel +</i>2.440 m</span>
-      <span class="drow__d"><i>Altura máx.</i>1.940 m</span>
-      <a class="drow__cta" href="#inscripcion">Inscribirme<i aria-hidden="true">→</i></a>
+      <h3 class="drow__name">55K</h3>
+      <span class="drow__sub">Todo el día en la montaña</span>
+      <dl class="pairs pairs--row">
+        <div><dt>Distancia real</dt><dd>54 km</dd></div>
+        <div><dt>Desnivel</dt><dd>2.440 m</dd></div>
+        <div><dt>Techo</dt><dd>1.940 m</dd></div>
+      </dl>
+      <a class="drow__cta" href="#sumate">Anotarme<i aria-hidden="true">→</i></a>
     </li>
-    <li class="drow drow--hero" data-img="assets/img/hero.jpg">
-      <span class="drow__i">07</span>
-      <h3 class="drow__name">70K<em>La reina</em></h3>
-      <span class="drow__d"><i>Distancia</i>70,2 km</span>
-      <span class="drow__d"><i>Desnivel +</i>3.300 m</span>
-      <span class="drow__d"><i>Altura máx.</i>1.940 m</span>
-      <a class="drow__cta" href="#inscripcion">Inscribirme<i aria-hidden="true">→</i></a>
+    <li class="drow drow--max" data-img="assets/img/hero.jpg">
+      <h3 class="drow__name">70K</h3>
+      <span class="drow__sub">Largás de noche. Terminás al sol.</span>
+      <dl class="pairs pairs--row">
+        <div><dt>Distancia real</dt><dd>70,2 km</dd></div>
+        <div><dt>Desnivel</dt><dd>3.300 m</dd></div>
+        <div><dt>Techo</dt><dd>1.940 m</dd></div>
+      </dl>
+      <a class="drow__cta" href="#sumate">Anotarme<i aria-hidden="true">→</i></a>
+    </li>
+    <li class="drow drow--kv" data-img="assets/img/kv.jpg">
+      <h3 class="drow__name">KV</h3>
+      <span class="drow__sub">Sólo para arriba. Sábado aparte.</span>
+      <dl class="pairs pairs--row">
+        <div><dt>Distancia real</dt><dd>5 km</dd></div>
+        <div><dt>Desnivel</dt><dd>1.000 m</dd></div>
+        <div><dt>Techo</dt><dd>1.940 m</dd></div>
+      </dl>
+      <a class="drow__cta" href="#sumate">Anotarme<i aria-hidden="true">→</i></a>
     </li>
   </ul>
   <div class="dlist__cursor" id="dcursor" aria-hidden="true"><img src="" alt=""></div>
 
-  <p class="section__foot">También corren los más chicos: <strong>UTU Kids</strong> y <strong>UTU Junior</strong>, con circuitos cortos y seguros dentro del predio.</p>
+  <p class="section__foot">Los chicos también corren: <strong>UTU Kids</strong> y <strong>UTU Junior</strong>, el sábado a la tarde, en circuitos cortos dentro del predio.</p>
 </section>
 
+<!-- ═══ STATEMENT ═══ -->
+<section class="creed">
+  <p class="eyebrow">Por qué se corre</p>
+  <blockquote class="creed__text">
+    La sierra no sabe quién sos. No le importa tu marca, tu edad ni cuántas carreras llevás encima. Hace una sola pregunta, y la hace arriba, cuando ya no queda nadie mirando: ¿seguís subiendo?
+  </blockquote>
+  <p class="creed__sign">Desafío UTU<sup>®</sup></p>
+</section>
 
-<!-- ═══ MATERIAL OBLIGATORIO ═══ -->
-<section class="section kit" id="material">
+<!-- ═══ MOCHILA (lo que llevás) ═══ -->
+<section class="section kit" id="mochila">
   <div class="section__head">
-    <h2 class="display">Lo que<br>llevás<br>encima</h2>
-    <p class="section__note">En la montaña no hay kiosco. El material obligatorio no es burocracia: es lo que te sostiene si el clima gira o el cuerpo dice basta. Se controla en la largada y puede controlarse en ruta.</p>
+    <h2 class="display">Lo que<br>llevás</h2>
+    <p class="section__note">Arriba no hay kiosco. El material obligatorio se controla en la largada y puede volver a controlarse en el sendero: no es trámite, es lo que te sostiene si el clima gira.</p>
   </div>
+
+  <ul class="kitcats">
+    <li>Mochila</li><li>Frontal</li><li>Abrigo</li><li>Comida</li>
+  </ul>
 
   <div class="kit__grid">
     <article class="kitcard">
       <span class="kitcard__tag">Todas las distancias</span>
       <ul class="check">
-        <li>Dorsal visible al frente, sin doblar ni tapar</li>
+        <li>Dorsal al frente, visible, sin doblar</li>
         <li>Chip de cronometraje</li>
         <li>Remera oficial de la carrera</li>
-        <li>Hidratación propia — vaso o flask reutilizable</li>
-        <li>Celular cargado con el número de emergencia agendado</li>
-        <li>Documento de identidad</li>
+        <li>Hidratación propia: vaso o flask reutilizable</li>
+        <li>Celular cargado, con el número de emergencia agendado</li>
+        <li>Documento</li>
       </ul>
     </article>
-
     <article class="kitcard kitcard--hot">
-      <span class="kitcard__tag">Sumá para 35K, 55K y 70K</span>
+      <span class="kitcard__tag">Se suma en 35K, 55K y 70K</span>
       <ul class="check">
-        <li>Linterna frontal con baterías de repuesto</li>
+        <li>Linterna frontal y baterías de repuesto</li>
         <li>Manta térmica</li>
-        <li>Botiquín personal básico</li>
+        <li>Botiquín personal</li>
         <li>Campera cortaviento</li>
-        <li>Reserva de comida sólida</li>
+        <li>Comida sólida de reserva</li>
         <li>Silbato</li>
       </ul>
     </article>
-
-    <article class="kitcard kitcard--note">
-      <h3>Sin basura en la sierra</h3>
-      <p>Cada envoltorio que entra al circuito, sale del circuito. Hay estaciones de reciclado en el predio y control en los puestos. Tirar basura fuera de los puntos habilitados es motivo de descalificación.</p>
-      <h3>El sendero es la marca</h3>
-      <p>Salirse de la señalización para cortar camino, además de peligroso, arruina el suelo serrano. Se corre por donde está marcado.</p>
-    </article>
   </div>
 
-  <p class="section__foot">El listado definitivo, los tiempos de corte y las sanciones salen en el <strong>reglamento oficial</strong> junto con la apertura de inscripciones. Ante la duda, escribinos a <a href="mailto:desafio.utu@gmail.com">desafio.utu@gmail.com</a>.</p>
-</section>
+  <div class="rules">
+    <div>
+      <h3>Lo que entra, sale</h3>
+      <p>Cada envoltorio que llevás al circuito vuelve con vos o queda en un puesto. Hay estaciones de reciclado en el predio. Tirar basura en la sierra es descalificación, sin discusión.</p>
+    </div>
+    <div>
+      <h3>El sendero es la carrera</h3>
+      <p>Cortar camino por fuera de la marcación es peligroso para vos y destruye el suelo serrano, que tarda años en volver. Se corre por donde está marcado.</p>
+    </div>
+  </div>
 
-<!-- ═══ LEYENDA ═══ -->
-<section class="legend" id="leyenda">
-  <p class="eyebrow eyebrow--light">Uturunco</p>
-  <blockquote class="legend__quote">
-    De día es uno más. De noche, entre el monte y la piedra, se vuelve animal: corre la sierra sin cansarse y defiende lo suyo.
-  </blockquote>
-  <p class="legend__foot">Esa es la figura que le da nombre a la carrera. El Desafío UTU existe para provocar la misma transformación en cada corredor: encontrar, arriba del cerro, una versión de uno que abajo no aparece. <strong>Todos llevamos un Uturunco adentro.</strong></p>
-  <a class="btn btn--light" href="#inscripcion"><span>Viví la leyenda</span><span aria-hidden="true">Viví la leyenda</span></a>
+  <p class="section__foot">El listado definitivo y los tiempos de corte salen con el <strong>reglamento oficial</strong>. Dudas, a <a href="mailto:desafio.utu@gmail.com">desafio.utu@gmail.com</a>.</p>
 </section>
 
 <!-- ═══ AFTERMOVIE ═══ -->
 <section class="film" id="film">
-  <div class="section__head">
-    <h2 class="display">El after<br>movie</h2>
-    <p class="section__note">Lo que se vive arriba del cerro no entra en una foto. Dale play.</p>
-  </div>
   <div class="film__frame" id="filmFrame" data-yt="fa8ClNP2SfY">
-    <img src="assets/img/35k.jpg" alt="Corredores del Desafío UTU en el filo de la sierra" loading="lazy">
-    <button class="film__play" type="button" aria-label="Reproducir el aftermovie del Desafío UTU">
+    <img src="assets/img/35k.jpg" alt="Corredores del Desafío UTU sobre el filo de la sierra" loading="lazy">
+    <button class="film__play" type="button" aria-label="Reproducir el video de la carrera">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-      <span>Ver el aftermovie</span>
+      <span>Lo que no entra en una foto</span>
     </button>
     <a class="film__yt" href="https://www.youtube.com/watch?v=fa8ClNP2SfY" target="_blank" rel="noopener">Abrir en YouTube</a>
   </div>
 </section>
 
-
-<!-- ═══ EDICIONES ANTERIORES ═══ -->
-<section class="section past" id="ediciones">
-  <div class="section__head">
-    <h2 class="display">Ya<br>pasaron</h2>
-    <p class="section__note">Resultados, tiempos y las fotos de cada edición. Buscá tu dorsal y llevate tu carrera.</p>
-  </div>
-  <ul class="past__grid">
-    <li><b>2022</b><a href="https://desafioutu.com/" target="_blank" rel="noopener">Fotos<i aria-hidden="true">→</i></a></li>
-    <li><b>2023</b><a href="https://desafioutu.com/" target="_blank" rel="noopener">Resultados y fotos<i aria-hidden="true">→</i></a></li>
-    <li><b>2024</b><a href="https://desafioutu.com/" target="_blank" rel="noopener">Resultados y fotos<i aria-hidden="true">→</i></a></li>
-    <li><b>2025</b><a href="https://desafioutu.com/" target="_blank" rel="noopener">Resultados y fotos<i aria-hidden="true">→</i></a></li>
-    <li class="past--last"><b>2026</b><a href="https://desafioutu.com/" target="_blank" rel="noopener">Resultados<i aria-hidden="true">→</i></a></li>
-  </ul>
-</section>
-
 <!-- ═══ CRONOGRAMA ═══ -->
 <section class="section cron" id="cronograma">
   <div class="section__head">
-    <h2 class="display">Cronograma</h2>
-    <p class="section__note">Tres días de montaña, feria del corredor y premiaciones en el Eco Camping Calabalumba.</p>
+    <h2 class="display">Tres días</h2>
+    <p class="section__note">La carrera es el domingo, pero el fin de semana arranca el viernes con la acreditación y la feria del corredor.</p>
   </div>
   <div class="cron__grid">
     <article class="day">
-      <header><span class="day__n">Viernes</span><span class="day__d" data-day="0">28.08</span></header>
+      <header><span class="day__d" data-day="0">27.08</span><span class="day__n">Viernes</span></header>
       <ul>
-        <li><b>14:00 – 20:00</b><span>Acreditación KV</span></li>
-        <li><b>14:00 – 20:00</b><span>Apertura de la Feria del Corredor</span></li>
-        <li><b>19:00</b><span>Charla técnica y briefing</span></li>
-      </ul>
-    </article>
-    <article class="day day--on">
-      <header><span class="day__n">Sábado</span><span class="day__d" data-day="1">29.08</span></header>
-      <ul>
-        <li><b>05:30</b><span>Concentración en la base del Uritorco</span></li>
-        <li><b>06:00</b><span>Largada Kilómetro Vertical</span></li>
-        <li><b>10:30</b><span>Premiación KV</span></li>
-        <li><b>12:00 – 20:00</b><span>Acreditación general y Feria</span></li>
-        <li><b>16:00</b><span>UTU Kids y UTU Junior</span></li>
+        <li><b>14:00 — 20:00</b><span>Acreditación del KV</span></li>
+        <li><b>14:00 — 20:00</b><span>Abre la feria del corredor</span></li>
+        <li><b>19:00</b><span>Charla técnica</span></li>
       </ul>
     </article>
     <article class="day">
-      <header><span class="day__n">Domingo</span><span class="day__d" data-day="2">30.08</span></header>
+      <header><span class="day__d" data-day="1">28.08</span><span class="day__n">Sábado</span></header>
       <ul>
-        <li><b>02:30</b><span>Largada 70K</span></li>
-        <li><b>04:30</b><span>Largada 55K</span></li>
-        <li><b>06:00</b><span>Largada 35K</span></li>
-        <li><b>07:00</b><span>Largada 28K</span></li>
-        <li><b>08:00</b><span>Largada 20K</span></li>
-        <li><b>08:30</b><span>Largada 10K</span></li>
-        <li><b>13:00 – 17:00</b><span>Premiaciones por distancia</span></li>
+        <li><b>05:30</b><span>Concentración en la base del Uritorco</span></li>
+        <li><b>06:00</b><span>Largada del KV</span></li>
+        <li><b>10:30</b><span>Premiación del KV</span></li>
+        <li><b>12:00 — 20:00</b><span>Acreditación general</span></li>
+        <li><b>16:00</b><span>UTU Kids y UTU Junior</span></li>
+      </ul>
+    </article>
+    <article class="day day--on">
+      <header><span class="day__d" data-day="2">29.08</span><span class="day__n">Domingo</span></header>
+      <ul>
+        <li><b>02:30</b><span>Largan las 70K</span></li>
+        <li><b>04:30</b><span>Largan las 55K</span></li>
+        <li><b>06:00</b><span>Largan las 35K</span></li>
+        <li><b>07:00</b><span>Largan las 28K</span></li>
+        <li><b>08:00</b><span>Largan las 20K</span></li>
+        <li><b>08:30</b><span>Largan las 10K</span></li>
+        <li><b>13:00 — 17:00</b><span>Premiaciones</span></li>
       </ul>
     </article>
   </div>
-  <p class="section__foot">Cronograma de referencia según la edición anterior. Los horarios definitivos se publican junto al reglamento.</p>
+  <p class="section__foot">Horarios de referencia según la edición anterior. Los definitivos se publican con el reglamento.</p>
 </section>
 
-<!-- ═══ SIERRA ═══ -->
-<section class="sierra" id="sierra">
-  <div class="sierra__photo">
-    <img src="assets/img/28k.jpg" alt="Sendero de montaña del Desafío UTU con vista a las sierras de Córdoba" loading="lazy">
-  </div>
-  <div class="sierra__body">
-    <p class="eyebrow">Capilla del Monte</p>
-    <h2 class="display display--sm">El cerro<br>que convoca.</h2>
-    <p>A 1.940 metros, el <strong>Uritorco</strong> es el techo de las Sierras Chicas y el imán de todo el valle de Punilla. El circuito del UTU lo cruza y sigue hacia el <strong>Cerro Overo</strong> y <strong>Las Gemelas</strong>: quebradas, filos de roca, pastizal de altura y un amanecer que se ve distinto desde arriba.</p>
-    <p>El pueblo se llena el fin de semana de la carrera. Hay hoteles, cabañas, hostels y bodegones a metros de la sede, y la organización trabaja con comercios locales para que el corredor y su familia tengan todo cerca.</p>
-    <ul class="pills">
-      <li>Uritorco · 1.940 m</li>
-      <li>Cerro Overo</li>
-      <li>Las Gemelas</li>
-      <li>Valle de Punilla</li>
-    </ul>
-    <div class="eco">
-      <h3>Compromiso ambiental</h3>
-      <p>Gestión responsable de residuos, estaciones de reciclado en el predio y respeto estricto por la señalización y el sendero. El que tira basura en la montaña, no corre.</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══ CÓMO LLEGAR + DÓNDE PARAR ═══ -->
+<!-- ═══ LLEGAR ═══ -->
 <section class="section llegar" id="llegar">
   <div class="section__head">
-    <h2 class="display">Cómo<br>llegar</h2>
-    <p class="section__note">Capilla del Monte está en el norte del valle de Punilla, a unos 110&nbsp;km de la ciudad de Córdoba por la RN&nbsp;38. La sede es el Eco Camping Calabalumba, sobre el río.</p>
+    <h2 class="display">Llegar</h2>
+    <p class="section__note">Capilla del Monte está en el norte del valle de Punilla, a unos 110 km de la ciudad de Córdoba. La sede es el Eco Camping Calabalumba, sobre el río.</p>
   </div>
-
   <div class="llegar__grid">
     <article class="via">
-      <span class="via__n">Auto</span>
-      <p>Desde Córdoba capital, RN 38 hacia el norte pasando Villa Carlos Paz, Cosquín y La Falda. Poco menos de dos horas. Hay estacionamiento habilitado cerca del predio, pero el fin de semana de la carrera se llena temprano.</p>
+      <span class="via__n">En auto</span>
+      <p>RN 38 hacia el norte desde Córdoba, pasando Carlos Paz, Cosquín y La Falda. Poco menos de dos horas. Hay estacionamiento cerca del predio, pero el fin de semana de la carrera se llena temprano.</p>
     </article>
     <article class="via">
-      <span class="via__n">Micro</span>
-      <p>Servicios diarios desde la terminal de Córdoba hasta la terminal de Capilla del Monte. Desde ahí al predio son pocas cuadras; también hay remises en la terminal.</p>
+      <span class="via__n">En micro</span>
+      <p>Servicios diarios desde la terminal de Córdoba hasta la de Capilla del Monte. De ahí al predio son pocas cuadras, y en la terminal hay remises.</p>
     </article>
     <article class="via">
-      <span class="via__n">Avión</span>
-      <p>Aeropuerto Ingeniero Ambrosio Taravella (COR), en Córdoba, y de ahí auto o micro. Si venís de otra provincia, conviene llegar el jueves o viernes temprano para acreditarte sin corridas.</p>
+      <span class="via__n">En avión</span>
+      <p>Aeropuerto Taravella (COR) y después auto o micro. Si venís de otra provincia, llegá el jueves o el viernes temprano: acreditarse con tiempo te ahorra la peor parte.</p>
     </article>
-  </div>
-
-  <div class="stay">
-    <div class="stay__head">
-      <p class="eyebrow">Dónde parar y dónde comer</p>
-      <h3>El pueblo se llena. Reservá con tiempo.</h3>
-      <p class="stay__copy">La organización trabaja con alojamientos y gastronómicos de Capilla del Monte para que el corredor y su familia tengan todo a mano. Estos son algunos de los que acompañan la carrera; el listado completo, con contactos, está en el sitio oficial.</p>
-    </div>
-    <div class="stay__cols">
-      <div>
-        <span class="stay__k">Hoteles</span>
-        <ul><li>Montecassino</li><li>Luna Serrana</li><li>Mousai</li><li>Terrazas del Uritorco</li><li>Montenativo</li></ul>
-      </div>
-      <div>
-        <span class="stay__k">Cabañas</span>
-        <ul><li>La Lomada</li><li>Namasté</li><li>Sierra Morada</li><li>Maimará</li><li>Quebrachal del Monte</li><li>Atardeceres</li></ul>
-      </div>
-      <div>
-        <span class="stay__k">Hostels y hosterías</span>
-        <ul><li>La Atalaya</li><li>Falucho</li><li>Casablanca</li><li>El Malecón</li><li>Villa Margarita</li><li>Los 3 Gómez</li></ul>
-      </div>
-      <div>
-        <span class="stay__k">Para comer</span>
-        <ul><li>Agua de los Palos</li><li>Sabía que Venías</li><li>Alfonsina Parrilla</li><li>Posta del Cerro</li><li>Viejo Palermo</li><li>Cervecería Orika</li></ul>
-      </div>
-    </div>
   </div>
 </section>
 
-
-<!-- ═══ PREGUNTAS ═══ -->
-<section class="section faq" id="faq">
+<!-- ═══ DUDAS ═══ -->
+<section class="section faq" id="dudas">
   <div class="section__head">
-    <h2 class="display">Dudas<br>frecuentes</h2>
-    <p class="section__note">Lo que más nos preguntan por Instagram. Si tu pregunta no está acá, escribinos.</p>
+    <h2 class="display">Dudas</h2>
+    <p class="section__note">Lo que más nos preguntan. Si la tuya no está, escribinos.</p>
   </div>
 
   <div class="faq__list">
     <details>
       <summary>Nunca corrí trail. ¿Puedo largar?</summary>
-      <p>Sí. La 10K está pensada justamente para eso: 13,3 km reales con 400 metros de desnivel, sin pasos técnicos de altura. Es exigente pero accesible si venís corriendo en calle y hacés algunas salidas al cerro antes. Las distancias largas sí piden experiencia previa en montaña.</p>
+      <p>Sí, y la 10K está hecha para eso: trece kilómetros con cuatrocientos metros de subida, sin pasos técnicos. Si venís corriendo en calle y hacés un par de salidas al cerro antes, la terminás. Las distancias largas son otra cosa y sí piden experiencia en montaña.</p>
     </details>
     <details>
       <summary>¿Por qué la 10K mide 13,3 km?</summary>
-      <p>Porque en trail el nombre de la prueba es una referencia, no una medición exacta. El terreno manda: los circuitos se arman siguiendo senderos, filos y quebradas que existen, y la distancia real sale de ahí. Todas las pruebas tienen su distancia real publicada en la tabla de distancias.</p>
+      <p>Porque en trail el nombre de la prueba es una referencia y el terreno manda. Los circuitos siguen senderos, filos y quebradas que ya existen, y la distancia sale de ahí. Por eso cada prueba publica su distancia real.</p>
     </details>
     <details>
-      <summary>¿Qué es el KV y en qué se diferencia?</summary>
-      <p>El Kilómetro Vertical es una subida pura: 1.000 metros de desnivel positivo en apenas 5 km, desde la base del Uritorco hasta la cumbre. Se corre el sábado, en día aparte, y muchos lo hacen como aperitivo del domingo. No se baja corriendo: el descenso es de regreso, sin cronómetro.</p>
+      <summary>¿Qué es el KV?</summary>
+      <p>Subida pura: mil metros de desnivel en cinco kilómetros, desde la base del Uritorco hasta la cumbre. Se corre el sábado, en día aparte, y la bajada es de vuelta a pie, sin cronómetro.</p>
     </details>
     <details>
-      <summary>¿Puedo hacer el KV y además una distancia el domingo?</summary>
-      <p>Sí, es una combinación habitual y por eso el KV está en otro día. Tené en cuenta que subir mil metros el sábado te deja las piernas cargadas, así que elegí con criterio la distancia del domingo.</p>
+      <summary>¿Puedo hacer el KV y además correr el domingo?</summary>
+      <p>Sí, es una combinación habitual y por eso el KV va en otro día. Ahora, subir mil metros el sábado te deja las piernas cargadas: elegí la distancia del domingo con eso en la cabeza.</p>
     </details>
     <details>
       <summary>¿Hay puestos de hidratación?</summary>
-      <p>Sí, distribuidos a lo largo de cada circuito. Igual la hidratación propia es obligatoria: los puestos reponen, no reemplazan tu mochila. En los puestos no se entregan vasos descartables, por eso el vaso o flask reutilizable está en el material obligatorio.</p>
+      <p>Sí, repartidos en cada circuito. Igual la hidratación propia es obligatoria: los puestos reponen, no reemplazan tu mochila. No se entregan vasos descartables, así que el vaso o flask reutilizable va sí o sí.</p>
     </details>
     <details>
       <summary>¿Y si el clima se pone feo?</summary>
-      <p>El fin de semana de la carrera cae cerca de la tormenta de Santa Rosa y en la sierra el tiempo cambia rápido: puede haber viento fuerte, niebla o frío en altura aunque abajo esté lindo. Por eso la campera y la manta térmica son obligatorias en las distancias largas. Si las condiciones son de riesgo, la organización puede modificar o acortar recorridos.</p>
+      <p>Arriba el tiempo cambia rápido: puede haber viento, niebla o frío en altura con el pueblo al sol. Por eso la campera y la manta térmica son obligatorias en las distancias largas. Si las condiciones son de riesgo, la organización puede acortar o modificar recorridos.</p>
     </details>
     <details>
-      <summary>¿Los chicos pueden correr?</summary>
-      <p>Sí. Están las categorías UTU Kids y UTU Junior, con circuitos cortos y seguros dentro del predio, el sábado a la tarde. Es gratuito o de valor simbólico según la edición, y suele ser lo mejor del fin de semana.</p>
-    </details>
-    <details>
-      <summary>¿La carrera da puntos ITRA y UTMB?</summary>
-      <p>Sí, el Desafío UTU está reconocido por ITRA y forma parte del UTMB Index. Los puntos dependen de la distancia y el desnivel de cada prueba, y se acreditan una vez homologados los resultados.</p>
+      <summary>¿Da puntos ITRA y UTMB?</summary>
+      <p>Sí. La carrera está reconocida por ITRA y forma parte del UTMB Index. Los puntos dependen de la distancia y el desnivel de cada prueba, y se acreditan cuando se homologan los resultados.</p>
     </details>
     <details>
       <summary>¿Cuánto sale y cuándo abren las inscripciones?</summary>
-      <p>Los valores se publican al abrir la inscripción, con precios escalonados: cuanto antes te anotás, menos pagás. Dejanos tu mail más abajo y te avisamos apenas abre, antes de que se agoten los cupos de las distancias largas.</p>
+      <p>Los valores salen al abrir la inscripción, escalonados: cuanto antes te anotás, menos pagás. Dejanos tu mail acá abajo y te avisamos apenas abre — los cupos de las distancias largas se agotan primero.</p>
     </details>
   </div>
 </section>
 
-<!-- ═══ SPONSORS ═══ -->
+<!-- ═══ ACOMPAÑAN ═══ -->
 <section class="section spon">
   <div class="spon__block">
     <span class="eyebrow">Organiza</span>
@@ -458,24 +372,20 @@
   </div>
 </section>
 
-<div class="chevrons" aria-hidden="true"></div>
-
-<!-- ═══ INSCRIPCIÓN ═══ -->
-<section class="cta" id="inscripcion">
+<!-- ═══ CIERRE ═══ -->
+<section class="end" id="sumate">
   <p class="eyebrow eyebrow--light">¿Listo?</p>
-  <h2 class="cta__title">Sumate<br>a la manada.</h2>
-  <p class="cta__copy">Cupos limitados por distancia. Inscribite online y recibí el reglamento, el listado de material obligatorio y las novedades del circuito.</p>
-  <a class="btn btn--light btn--xl" href="https://tyr.com.ar/utu2026" target="_blank" rel="noopener">
-    <span>Inscribirme ahora</span><span aria-hidden="true">Inscribirme ahora</span>
-  </a>
-  <form class="cta__form" id="newsletter" novalidate>
-    <label for="mail">Enterate primero de la apertura de inscripciones</label>
-    <div class="cta__field">
+  <h2 class="end__title">Nos vemos<br>arriba.</h2>
+  <p class="end__copy">Dejanos tu mail y te escribimos cuando abran las inscripciones, con el reglamento y el listado de material. Antes de que se llenen los cupos.</p>
+  <form class="end__form" id="newsletter" novalidate>
+    <label for="mail">Tu correo</label>
+    <div class="end__field">
       <input id="mail" type="email" name="email" placeholder="tu@mail.com" autocomplete="email" required>
       <button type="submit">Avisame</button>
     </div>
-    <p class="cta__msg" id="formMsg" role="status"></p>
+    <p class="end__msg" id="formMsg" role="status"></p>
   </form>
+  <a class="end__alt" href="https://tyr.com.ar/utu2026" target="_blank" rel="noopener">Las inscripciones ya están abiertas →</a>
 </section>
 
 </main>
@@ -483,37 +393,37 @@
 <!-- ═══ FOOTER ═══ -->
 <footer class="foot">
   <div class="foot__top">
-    <a class="foot__logo" href="#top" aria-label="Desafío UTU, inicio"><img src="assets/img/logo-blanco.svg" alt="Desafío UTU" width="364" height="206"></a>
+    <a class="foot__logo" href="#top" aria-label="Desafío UTU, inicio">
+      <img src="assets/img/logo-blanco.svg" alt="Desafío UTU" width="364" height="206">
+    </a>
     <nav class="foot__nav">
       <div>
-        <span class="eyebrow">Carrera</span>
+        <span class="eyebrow">La carrera</span>
         <a href="#distancias">Distancias</a>
+        <a href="#mochila">Mochila</a>
         <a href="#cronograma">Cronograma</a>
-        <a href="#material">Material obligatorio</a>
-        <a href="#leyenda">La leyenda</a>
-        <a href="#sierra">La sierra</a>
-        <a href="#llegar">Cómo llegar</a>
-        <a href="#faq">Dudas frecuentes</a>
+        <a href="#llegar">Llegar</a>
+        <a href="#dudas">Dudas</a>
       </div>
       <div>
         <span class="eyebrow">Corredor</span>
-        <a href="https://tyr.com.ar/utu2026" target="_blank" rel="noopener">Inscribirme</a>
+        <a href="https://tyr.com.ar/utu2026" target="_blank" rel="noopener">Anotarme</a>
         <a href="https://desafioutu.com/" target="_blank" rel="noopener">Tu dorsal</a>
         <a href="https://desafioutu.com/" target="_blank" rel="noopener">Resultados</a>
-        <a href="https://desafioutu.com/" target="_blank" rel="noopener">Buscá tus fotos</a>
+        <a href="https://desafioutu.com/" target="_blank" rel="noopener">Tus fotos</a>
       </div>
       <div>
-        <span class="eyebrow">Seguinos</span>
+        <span class="eyebrow">Escribinos</span>
         <a href="https://instagram.com/desafioutu" target="_blank" rel="noopener">Instagram</a>
         <a href="https://facebook.com/ultratrailutu" target="_blank" rel="noopener">Facebook</a>
         <a href="mailto:desafio.utu@gmail.com">desafio.utu@gmail.com</a>
       </div>
     </nav>
   </div>
-  <div class="foot__mark" aria-hidden="true">UTU</div>
+  <div class="foot__mark" aria-hidden="true">Distancias, Mochila, Cronograma, Llegar</div>
   <div class="foot__bottom">
-    <span>© <span id="year">2026</span> Desafío UTU® — Capilla del Monte, Córdoba, Argentina.</span>
-    <span>Fotografías: Pablo Bar / Desafío UTU.</span>
+    <span>© <span id="year">2026</span> Desafío UTU® — Capilla del Monte, Córdoba.</span>
+    <span>Fotos: Pablo Bar / Desafío UTU.</span>
   </div>
 </footer>
 
