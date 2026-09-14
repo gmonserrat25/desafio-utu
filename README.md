@@ -42,45 +42,67 @@ pasarlos por Jekyll.
 El embed de YouTube del aftermovie puede no cargar según dónde se sirva la página; por
 eso el bloque tiene además un enlace "Abrir en YouTube" que siempre funciona.
 
+## Identidad
+
+Paleta y tipografías de la marca, aplicadas con la lógica editorial de la referencia:
+lienzo claro, muchísimo aire, tipografía enorme en negro, y el amarillo reservado para
+dos gestos y nada más.
+
+| Token | Valor | Uso |
+|-------|-------|-----|
+| `--ink` | `#1D1D1B` | negro cálido de marca — el peso de la página |
+| `--bone` | `#F4F3EE` | el lienzo |
+| `--amarillo` | `#F7F839` | **sólo dos gestos**: el relleno de los botones al pasar por encima, y el fondo del KV en la lista |
+| `--verde` | `#3C6151` | acentos chicos: los puntos de la fecha, el domingo del cronograma, los links |
+
+- **Display:** Oswald · **Cuerpo:** Poppins
+- Logotipos oficiales en `assets/img/logo1-negro.svg` y `logo-blanco.svg`
+
+La regla del amarillo es a propósito. Usado como banda de señalización, el sitio termina
+pareciéndose al que la carrera ya tiene; usado dos veces, marca la identidad sin tomarse
+la página.
+
 ## Secciones
 
-| # | Sección | Equivalente en el modelo |
-|---|---------|--------------------------|
-| 1 | Ticker amarillo + nav con logo oficial | ticker + nav |
-| 2 | Hero "Sé parte de la leyenda" + cuenta regresiva | hero |
-| 3 | Los números de la carrera | — |
-| 4 | Destacado 70K | Next Run |
-| 5 | Las 7 distancias (lista con hover) | Calendar |
-| 6 | Material obligatorio | — |
-| 7 | La leyenda del Uturunco (verde serrano) | Our Mission |
-| 8 | Aftermovie | — |
-| 9 | Ediciones anteriores: resultados y fotos | — |
-| 10 | Cronograma de 3 días | — |
-| 11 | La sierra + compromiso ambiental | — |
-| 12 | Cómo llegar + alojamiento y gastronomía | — |
-| 13 | Dudas frecuentes | — |
-| 14 | Sponsors | Shop |
-| 15 | Inscripción + newsletter | Ready? / Signup |
-| 16 | Footer | footer |
+Qué toma cada una del modelo:
+
+| # | Sección | De dónde sale |
+|---|---------|---------------|
+| 1 | Top line + nav | el top-line de la referencia |
+| 2 | Hero con foto y pie de foto | el hero con retrato y su crédito |
+| 3 | Próxima edición, fecha partida `28.08.` | el bloque "Next Run" |
+| 4 | Las 7 distancias, lista con pares dato/valor | el "Calendar" con `Start:` / `Distance:` |
+| 5 | Statement "Por qué se corre" | el "Our Mission" centrado |
+| 6 | Lo que llevás (material obligatorio) | la sección de producto y sus categorías |
+| 7 | Video | — |
+| 8 | Tres días (cronograma) | — |
+| 9 | Llegar | — |
+| 10 | Dudas | — |
+| 11 | Acompañan | — |
+| 12 | Cierre + mail | el "Ready? / Sign up" |
+| 13 | Footer con las secciones en grande | el footer de la referencia |
+
+Lo que **no** se toma del sitio que la carrera ya tiene: su titular, su cuenta regresiva,
+su sección de la leyenda del Uturunco y su listado de alojamientos. Todo el copy de acá
+está escrito para este sitio; los datos duros son hechos de la carrera.
 
 ## Cambiar la fecha de la próxima edición
 
-Todo lo que depende de la fecha sale de un solo bloque, arriba de `assets/js/main.js`:
+Arriba de `assets/js/main.js`:
 
 ```js
 const UTU = {
-  edicion: 2027,
-  start: new Date('2027-08-27T14:00:00-03:00'),
   dias: ['27.08', '28.08', '29.08'],
-  confirmada: false,        // true saca el asterisco de "fecha a confirmar"
   inscripcion: 'https://tyr.com.ar/utu2026'
 };
 ```
 
-Eso alimenta el año del hero, el texto de fecha, la cuenta regresiva y los tres días del
-cronograma. **La fecha 2027 es estimada** (último fin de semana de agosto, como las ediciones
-anteriores): la edición 2026 se corrió el 28, 29 y 30 de agosto de 2026 y la organización
-todavía no publicó la próxima. Por eso `confirmada: false` agrega un asterisco.
+`dias` alimenta los tres días del cronograma. La fecha grande del bloque "Próxima edición"
+y la del top line están escritas en `index.html` — son dos lugares, buscá `28.08`.
+
+**Las fechas de 2027 son estimadas.** La edición 2026 se corrió el 28, 29 y 30 de agosto
+y la organización todavía no publicó la próxima; puse el último fin de semana de agosto,
+como las ediciones anteriores.
 
 ## Datos de la carrera
 
@@ -108,6 +130,9 @@ definitivos se publican junto al reglamento.
 
 ## Assets
 
+- **Textos**: todo el copy está escrito para este sitio. Los datos duros — distancias,
+  desniveles, alturas, sede, horarios — son hechos de la carrera y salen de las fuentes
+  del final; lo que no se reutiliza es la redacción del sitio oficial.
 - **Fotos**: las siete fotos de carrera son las oficiales de `desafioutu.com` (crédito:
   Pablo Bar / Desafío UTU), redimensionadas a 1800 px de ancho. Están acreditadas en el footer.
   Antes de publicar conviene confirmar el uso con la organización.
