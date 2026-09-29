@@ -1,0 +1,21 @@
+{
+  "url": "https://gmonserrat25.github.io/desafio-utu/",
+  "nombre": "Desafío UTU Ultra Trail",
+  "tipo": "SportsEvent",
+  "nota": "JSON-LD escrito a mano como SportsEvent (el script genera LocalBusiness y pisaría el bloque). Datos en index.html.",
+  "rubro": "Carrera de trail running",
+  "direccion": {
+    "calle": "Eco Camping Calabalumba",
+    "ciudad": "Capilla del Monte",
+    "provincia": "Córdoba",
+    "pais": "AR"
+  },
+  "email": "desafio.utu@gmail.com",
+  "sameAs": [
+    "https://instagram.com/desafioutu",
+    "https://facebook.com/ultratrailutu"
+  ],
+  "organizador": "Warriors Runners",
+  "inscripcion": "https://tyr.com.ar/utu2026",
+  "fechas_estimadas": "2027-08-27/2027-08-29"
+}
