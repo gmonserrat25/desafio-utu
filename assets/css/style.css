@@ -490,6 +490,9 @@ ul,ol,dl,dd{margin:0;padding:0;list-style:none}
   border-top:1px solid var(--line-l);padding-top:1.3rem;margin-top:1.5rem;
   font-size:.66rem;letter-spacing:.06em;color:rgba(244,243,238,.4);
 }
+.foot__credito{margin:.9rem 0 0;text-align:center;font-size:10px;letter-spacing:.06em;color:rgba(244,243,238,.3)}
+.foot__credito a{color:inherit;transition:color .3s}
+.foot__credito a:hover{color:rgba(244,243,238,.6)}
 
 /* ═══ REVEAL ═══════════════════════════════════ */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
